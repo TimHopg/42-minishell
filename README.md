@@ -45,6 +45,7 @@ A stripped down implementation of a shell with the following features:
 - Here documents
 - Variable expansion
 - Single and double quoted behaviour
+- Wildcards in the current directory
 
 Any references made to standard behaviour refers to `GNU bash version 5.1.16` and most `Minishell` functionality will try to replicate its behaviour.
 
@@ -871,7 +872,8 @@ Our AST is a binary tree to reduce complexity.
 
 ### Glob/Wildcard
 
-`echo *` prints all filenames in the current directory.
+`echo *` prints all filenames in the current directory.  
+\* wildcards in the current directory have been added. Results are not displayed in ASCII order but the feature is functioning.
 
 Parenthesis, OR (`||`) and AND (`&&`)  
 Backslash ('\\') and escape characters.
