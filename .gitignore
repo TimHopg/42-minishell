@@ -1,0 +1,12 @@
+*.o
+*.out
+*.dSYM
+*.a
+.vscode
+minishell
+tmp/*
+var/*
+HANDIN/
+minishell_tester/
+.minishell_tester.mpanic/
+mpanic/
